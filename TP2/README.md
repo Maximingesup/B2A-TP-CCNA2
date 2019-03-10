@@ -8,6 +8,7 @@ I. Mise en place du lab
 ### 1. Création des VMs et adressage IP ###
 
 
+
 Création des VM centos7
 
 Création des cartes:
@@ -51,7 +52,8 @@ Edition du fichier hosts
     #10.2.2.254   router2.1
     #10.2.12.3    router2.2
 
-### 1. Routage statique ###
+### 2. Routage statique ###
+
 
 
 Ajout de l’ip forwarding dans le fichier de config /etc/sysctl.conf sur router1 et router2
@@ -114,6 +116,7 @@ Il ne fonctionne pas car il n’a aucune route vers server1
 ### 3. Visualisation du routage avec Wireshark ###
 
 
+
 Sur client1
 
     #ping server1
@@ -141,6 +144,7 @@ II. NAT et services d'infra
 ============
 
 ### 1. Mise en place du NAT ###
+
 
 
 Vérification que l’on peux se connecter à internet avec le router1
@@ -204,6 +208,7 @@ Test curl
 ### 2. DHCP server ###
 
 
+
 Changement du nom de la machine: `/etc/hostname`
 
     #Installation dhcp : sudo yum install -y dhcp
@@ -249,6 +254,7 @@ On utilise la commande  `ip a` pour vérifier que l’on a bien une nouvelle ip
 
 
 ### 3. NTP server ###
+
 
 
 Ajout du pool de serveur français dans le fichier chrony.conf sur router1
@@ -332,6 +338,7 @@ chronyc tracking + sources
 
 
 ### 4. Web server ###
+
 
 
 Installation des paquet pour le serveur web
