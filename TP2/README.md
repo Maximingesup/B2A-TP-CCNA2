@@ -5,7 +5,8 @@ TP2 Maxim Germain
 I. Mise en place du lab
 ------------
 
-###1. Création des VMs et adressage IP###
+### 1. Création des VMs et adressage IP ###
+
 
 Création des VM centos7
 
@@ -50,12 +51,14 @@ Edition du fichier hosts
     #10.2.2.254   router2.1
     #10.2.12.3    router2.2
 
-###1. Routage statique###
+### 1. Routage statique ###
+
 
 Ajout de l’ip forwarding dans le fichier de config /etc/sysctl.conf sur router1 et router2
 
     #net.ipv4.conf.all.forwarding=1
     #reboot
+
 
 Ajout d’une route de router1 vers net2 en utilisant net12 de router2
 
@@ -108,7 +111,8 @@ ping router1 vers server1
 Il ne fonctionne pas car il n’a aucune route vers server1
 
 
-###3. Visualisation du routage avec Wireshark###
+### 3. Visualisation du routage avec Wireshark ###
+
 
 Sur client1
 
@@ -136,7 +140,8 @@ La seul choses qui change entre ces deux captures, ce sont les adresses mac des 
 II. NAT et services d'infra
 ============
 
-###1. Mise en place du NAT###
+### 1. Mise en place du NAT ###
+
 
 Vérification que l’on peux se connecter à internet avec le router1
 
@@ -196,7 +201,9 @@ Test curl
     #</BODY></HTML>
 
 
-###2. DHCP server###
+### 2. DHCP server ###
+
+
 Changement du nom de la machine: `/etc/hostname`
 
     #Installation dhcp : sudo yum install -y dhcp
@@ -241,7 +248,8 @@ On utilise la commande  `ip a` pour vérifier que l’on a bien une nouvelle ip
     #valid_lft forever preferred_lft forever
 
 
-###3. NTP server###
+### 3. NTP server ###
+
 
 Ajout du pool de serveur français dans le fichier chrony.conf sur router1
 
@@ -323,7 +331,8 @@ chronyc tracking + sources
     #Leap status : Normal4. 
 
 
-###4. Web server###
+### 4. Web server ###
+
 
 Installation des paquet pour le serveur web
 
