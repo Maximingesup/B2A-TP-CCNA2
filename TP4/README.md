@@ -1,6 +1,52 @@
 Menu 2 : Infra campus
 =================
 
+# Menu 2 : Infra campus
+
+**Fournir un réseau stable à un grand nombre de clients sur un même site.**
+
+#### > Locaux
+* 3 bâtiments
+  * 2 étages, 5 salles/étages
+  * chaque salle supporte au mini 30 clients
+
+#### > Clients du réseau
+
+* ~200 étudiants
+  * en moyenne, ils ont 1,5 équipements
+    * tous ont un PC
+    * certains utilisent smartphone/tablette avec la wifi
+* ~50 profs
+  * en moyenne, ils ont 1,5 équipements
+    * tous ont un PC
+    * certains utilisent smartphone/tablette avec la wifi
+* ~20 serveurs
+* 15 caméras
+* 2 admins
+
+#### > Besoin
+
+* les étudiants ont accès à 10 serveurs sur les 20
+* les profs ont accès à tous les serveurs
+* les admins ont accès à tous les serveurs et aux caméras
+* débit descendant WAN exigé : 
+  * étudiant/profs/admins : 1Mo/sec
+  * serveur : 5Mo/sec
+
+#### > Rendu attendu
+
+* plan d'adressage IP
+* plan des VLANs
+* schéma de la topologie
+* matériel nécessaire
+  * pas dans les détails, mais au moins la quantité
+  * les câbles, ça compte
+* maquette GNS3
+
+> **HINT**  mettez en place une **archi 3-tier** (core/distribution/access) (on aura une partie théorique là-dessus)
+
+---
+
 ![Schéma réseau](https://user-images.githubusercontent.com/34605772/56131983-2d7f8180-5f89-11e9-82c4-79ce780fba49.png)
 
 
