@@ -13,3 +13,18 @@ Matériel nécessaire pour la création de l’infrastructure:
 4 routeurs
 57 câbles au total
 6 vm (2 pour les serveurs, 1 pour admin, 1 pour prof,1 pour élève, 1 pour les caméras) 
+
+Plan d'adressage ip
+
+| Hosts    | lab4-net1                  | lab4-net2             | lab4-net3            |
+|----------|----------------------------|-----------------------|----------------------|
+| Client1  | 10.0.0.1                   |                       |                      |
+| Admin    | 10.0.0.2                   |                       |                      |
+| Prof     | 10.0.0.3                   |                       |                      |
+| Elève    | 10.0.0.4                   |                       |                      |
+| Caméra   | 10.0.0.5                   |                       |                      |
+| Serveur1 | 10.0.0.6                   |                       |                      |
+| Serveur2 | 10.0.0.7                   |                       |                      |
+| Routeur1 |                            | 10.2.0.1 /30 pour 2/0 | 10.1.0.1/30 pour 1/0 |
+| Routeur2 | 10.0.0.8 pour 0/0     vip: | 10.2.0.2 /30 pour 1/0 |                      |
+| Routeur3 | 10.0.0.9 pour 1/0   vip:   |                       | 10.1.0.2/30 pour 2/0 |
