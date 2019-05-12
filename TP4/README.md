@@ -15,9 +15,7 @@ Matériel nécessaire pour la création de l’infrastructure:
 57 câbles au total
 6 vm (2 pour les serveurs, 1 pour admin, 1 pour prof,1 pour élève, 1 pour les caméras) 
 
-Plan d'adressage ip
-
-|          |                   |                       |                      |                      |                      | 
+Plan d'adressage
 |----------|-------------------|-----------------------|----------------------|----------------------|----------------------| 
 | Hosts    | lab4-net1         | lab4-net2             | lab4-net3            | lab4-net4            | lab4-net5            | 
 | Client1  | 10.0.0.1          |                       |                      |                      |                      | 
