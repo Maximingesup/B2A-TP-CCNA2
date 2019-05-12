@@ -1,7 +1,7 @@
 Menu 2 : Infra campus
 =================
 
-# Menu 2 : Infra campus
+# Consignes
 
 **Fournir un réseau stable à un grand nombre de clients sur un même site.**
 
@@ -46,6 +46,8 @@ Menu 2 : Infra campus
 > **HINT**  mettez en place une **archi 3-tier** (core/distribution/access) (on aura une partie théorique là-dessus)
 
 ---
+
+# Topologie
 
 ![Schéma réseau](https://user-images.githubusercontent.com/34605772/56131983-2d7f8180-5f89-11e9-82c4-79ce780fba49.png)
 
